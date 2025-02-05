@@ -10,10 +10,10 @@
     "tauri": "tauri",
     "test": "vitest",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "format": "prettier --write \"src/**/*.{ts,tsx}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "start": "tauri dev"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.5.0",
     "framer-motion": "^10.16.0",
     "lucide-react": "^0.263.1",
     "react": "^18.2.0",
@@ -22,7 +22,8 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^1.5.0",
+    "@tauri-apps/api": "^2.2.0",
+    "@tauri-apps/cli": "^2.2.7",
     "@types/node": "^20.5.9",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
