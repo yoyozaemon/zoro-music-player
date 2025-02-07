@@ -11,13 +11,15 @@
     "test": "vitest",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "start": "tauri dev"
+    "start": "tauri dev",
+    "win": "npm run tauri build -- --runner cargo-xwin --target x86_64-pc-windows-msvc"
   },
   "dependencies": {
     "framer-motion": "^10.16.0",
     "lucide-react": "^0.263.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.4.0",
     "react-router-dom": "^6.15.0",
     "zustand": "^4.4.1"
   },
